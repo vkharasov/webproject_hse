@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача</title>
+    <style>
+        a:hover { background-color: yellow; }
+        a.active { background-color: red; }
+    </style>
+</head>
+<body>
+<div id="menu"></div>
+
+<p name="formulation">
+    Дано число X. Определить, принадлежит ли это число заданному промежутку [a, b].
+</p>
+
+<form action="https://www.google.com" id="UserEnter" name="UserEnter" target="_blank">
+    <ul>
+        <li>Формулировка задачи<br>
+            <textarea cols="60" rows="4" id="task" name="formulation">Дано число X. Определить, принадлежит ли это число заданному промежутку [a, b].</textarea>
+        </li>
+        <li>X: <input id="X" name="X" type="number" step="any" value="5"></li>
+        <li>a: <input id="a" name="a" type="number" step="any" value="0"></li>
+        <li>b: <input id="b" name="b" type="number" step="any" value="10"></li>
+        <li>Результат: <input id="result" name="result" value="не определён"></li>
+        <li>Действие: <input id="verify" type="button" value="Проверить"></li>
+    </ul>
+</form>
+
+<script src="./scripts/menu.js"></script>
+<script src="./scripts/task.js"></script>
+</body>
+</html>

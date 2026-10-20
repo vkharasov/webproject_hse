@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица — города Татарстана</title>
+    <style>
+        a:hover { background-color: yellow; }
+        a.active { background-color: red; }
+
+        table {
+            background-image: url('image/background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+<div id="menu"></div>
+
+<h2 align="center">Крупные города Татарстана</h2>
+
+<table width="700" align="center" bgcolor="#c0c0c0" border="2" cellspacing="10" cellpadding="10">
+    <tr>
+        <th>Город</th>
+        <th>Население (тыс.)</th>
+        <th>Изображение</th>
+        <th>Ссылка</th>
+    </tr>
+    <tr>
+        <td>Казань</td>
+        <td>1300</td>
+        <td><img src="image/kul_sharif.jpg" alt="Казань" width="90"></td>
+        <td><a href="https://kzn.ru/" target="_blank">kzn.ru</a></td>
+    </tr>
+    <tr>
+        <td>Набережные Челны</td>
+        <td>540</td>
+        <td><img src="image/chak_chak.jpg" alt="Челны" width="90"></td>
+        <td><a href="https://nabchelny.ru/" target="_blank">nabchelny.ru</a></td>
+    </tr>
+    <tr>
+        <td>Нижнекамск</td>
+        <td>240</td>
+        <td><img src="image/sabantuy.jpg" alt="Нижнекамск" width="90"></td>
+        <td><a href="https://e-nkama.ru/" target="_blank">e-nkama.ru</a></td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">
+            <a href="info.html">← Вернуться к информации о Татарстане</a>
+        </td>
+    </tr>
+</table>
+
+<script src="./scripts/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Паспорт</title>
+    <style>
+        a:hover { background-color: yellow; }
+        a.active { background-color: red; }
+
+        body {
+            background-image: url(image/pass.jpg);
+            background-position: left 265px;
+            background-repeat: no-repeat;
+        }
+        .fam { margin-left: 150px; margin-top: 293px; }
+        .imya { margin-left: 140px; margin-top: 22px; }
+        .otc { margin-left: 150px; margin-top: 3px; }
+        .date { margin-left: 135px; margin-top: 2px; }
+        .img { margin-left: 10px; margin-top: -70px; }
+        .date_vid { margin-left: 65px; margin-top: -324px; }
+        .vid { margin-left: 90px; margin-top: -77px; }
+        .place { margin-left: 160px; margin-top: 323px; }
+        .button { margin-left: 10px; margin-top: 120px; }
+    </style>
+</head>
+<body>
+<div id="menu"></div>
+
+<!-- Каждому div дан id — так надёжнее, чем обращаться по порядку -->
+<div class="fam" id="lastname">Иванов</div>
+<div class="imya" id="firstname">Иван</div>
+<div class="otc" id="patronymic">Иванович</div>
+<div class="date" id="birth">Муж &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01.01.2000</div>
+<div class="img"><img src="image/man.jpg" height="110" width="100" alt="Фото"></div>
+<div class="date_vid">01.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 770-070</div>
+<div class="vid" id="issuer">ГУ МВД ПО Г.МОСКВЕ</div>
+<div class="place" id="place">Г.МОСКВА</div>
+
+<button class="button" id="change">Заменить на латиницу</button>
+
+<script src="./scripts/menu.js"></script>
+<script src="./scripts/pass.js"></script>
+</body>
+</html>

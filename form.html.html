@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+    <style>
+        a:hover { background-color: yellow; }
+        a.active { background-color: red; }
+    </style>
+</head>
+<body>
+<div id="menu"></div>
+
+<!-- ========== ФОРМА 1: КОНТАКТНЫЕ ДАННЫЕ ========== -->
+<h1>Форма 1: Контактные данные</h1>
+<form action="https://www.google.com" id="UserEnter1" name="UserEnter1" target="_blank">
+    <p>Фамилия: <input type="text" name="lastname" value="Иванов"></p>
+    <p>Имя: <input type="text" name="firstname" value="Иван"></p>
+    <p>Группа: <input type="text" name="group" value="БПИ201"></p>
+    <p>Мобильный телефон: <input type="tel" name="phone" value="+7 900 000-00-00"></p>
+    <p>Электронная почта: <input type="email" name="email" value="user@example.com"></p>
+    <p>Дата отправки: <input type="date" name="send_date" value="2026-10-19"></p>
+    <p>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">
+    </p>
+</form>
+
+<hr>
+
+<!-- ========== ФОРМА 2: ОРИГИНАЛЬНЫЕ ДАННЫЕ (отзыв о поездке) ========== -->
+<h1>Форма 2: Отзыв о поездке в Татарстан</h1>
+<form action="https://www.google.com" id="UserEnter2" name="UserEnter2" target="_blank">
+    <p>Ваше имя: <input type="text" name="username" value="Турист"></p>
+
+    <p>Сколько дней вы были в республике:
+        <input type="number" name="days_count" min="1" max="30" value="3">
+    </p>
+
+    <p><b>Что вам понравилось больше всего?</b><br>
+        <input type="radio" name="liked" value="kazan" checked> Казань<br>
+        <input type="radio" name="liked" value="nature"> Природа<br>
+        <input type="radio" name="liked" value="food"> Кухня<br>
+        <input type="radio" name="liked" value="sabantuy"> Сабантуй
+    </p>
+
+    <p>
+        <input type="checkbox" name="visit_again" value="yes" checked> Готов приехать снова
+    </p>
+
+    <p>Дата поездки: <input type="date" name="trip_date" value="2026-06-15"></p>
+    <p>Пароль для входа в личный кабинет: <input type="password" name="user_password" size="15" value=""></p>
+
+    <input type="hidden" name="form_type" value="tatarstan_feedback">
+
+    <p>Комментарий:<br>
+        <textarea name="comment" cols="40" rows="3">Отличная поездка!</textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">
+    </p>
+</form>
+
+<script src="./scripts/menu.js"></script>
+</body>
+</html>

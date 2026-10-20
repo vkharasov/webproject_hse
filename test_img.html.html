@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Фото Татарстана</title>
+    <style>
+        a:hover { background-color: yellow; }
+        a.active { background-color: red; }
+        figure { background: #5f6a72; padding: 10px; display: inline-block; margin: 5px; text-align: center; }
+        figcaption { color: #fff; }
+    </style>
+</head>
+<body>
+<div id="menu"></div>
+
+<h1>Фотогалерея</h1>
+
+<article>
+    <figure>
+        <img src="image/kul_sharif.jpg" alt="Кул-Шариф" width="200">
+        <figcaption>Мечеть Кул-Шариф</figcaption>
+    </figure>
+    <figure>
+        <img src="image/sabantuy.jpg" alt="Сабантуй" width="200">
+        <figcaption>Праздник Сабантуй</figcaption>
+    </figure>
+    <figure>
+        <img src="image/chak_chak.jpg" alt="Чак-чак" width="200">
+        <figcaption>Чак-чак</figcaption>
+    </figure>
+
+    <!-- Миниатюра-ссылка на большую картинку -->
+    <figure>
+        <p>
+            <a href="big_img.html" target="_blank">
+                <img src="image/kremlin_small.jpg" alt="Кремль" width="100">
+            </a>
+        </p>
+        <figcaption>Кликни — откроется большая фотография Кремля</figcaption>
+    </figure>
+</article>
+
+<script src="./scripts/menu.js"></script>
+</body>
+</html>

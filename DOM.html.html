@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM_JS. Считываем информацию из DOM</title>
+    <style>
+        a:hover { background-color: yellow; }
+        a.active { background-color: red; }
+    </style>
+</head>
+<body>
+<div id="menu"></div>
+
+<h1>DOM_JS. Считываем информацию из DOM</h1>
+
+<p>
+    На странице <a href="passport.html">Паспорт</a> с помощью инструментов разработчика браузера
+    были получены из DOM следующие данные: фамилия, имя, отчество, год рождения.
+</p>
+
+<p>Использованные команды:</p>
+<pre>
+document.getElementById('lastname').innerText
+document.getElementById('firstname').innerText
+document.getElementById('patronymic').innerText
+document.getElementById('birth').innerText
+</pre>
+
+<figure>
+    <img src="image/dom_screenshot.png" alt="Скриншот DevTools" width="600">
+    <figcaption>Скриншот браузера: чтение данных из DOM</figcaption>
+</figure>
+
+<script src="./scripts/menu.js"></script>
+</body>
+</html>
